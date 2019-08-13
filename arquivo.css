@@ -1,0 +1,251 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+/* Formatando uma fonte para o body e um background */
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #fff url('Imagens/fundo.png') repeat-x;
+}
+
+/* Definindo largura e margin do container principal */
+
+#container {
+	width: 750px;
+	margin: 0 auto;
+	
+}
+
+/* Criando a área superior do site */
+
+.topo {
+	height: 150px;
+	background: url('Imagens/detalhe-topo.png') no-repeat right top;
+	padding-top: 25px;
+	
+}
+
+/* Mexendo no logo */
+.logo {
+	width: 152px;
+	height: 66px;
+	background: url('Imagens/logo.png') no-repeat center;
+}
+
+
+/* Formatando a barra de navegação */
+
+.topo li {
+list-style-type: none;
+float: left;
+margin-top: 30px;
+padding: 0;
+background: #b10333;
+}
+
+.topo a {
+	text-decoration: none;
+	font-size: 0.9em;
+	display: block;
+	padding: 0.5em 1.5em;
+	line-height: 2.1em;
+	color: white;
+	background: url('Imagens/divisor.png') no-repeat left center;
+}
+
+.topo ul .primeiro a {
+	background: none;
+
+}
+
+/* Formatando links */
+
+.topo a:hover {
+	color: #69001d;
+}
+
+/* Marcando página */
+
+body.home a#home, body.brasil a#brasil, body.internacional a#internacional, body.economia a#economia, body.saude a#saude, body.ciencia a#ciencia, body.fotos a#fotos {
+	color: white;
+	background: #de003e;
+	cursor: text;
+}
+
+/* Configurar layout de três colunas */
+
+#conteudo {
+	background: #f5f5f5;
+	margin-top: 60px;
+}
+
+#tres-colunas #primario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px;
+}
+
+#duas #primario {
+	width: 555px;
+	margin: 0 0 20px 15px;
+}
+
+
+#uma-coluna #primario {
+	width: 750px;
+	margin: 0 0 20px 0px;
+}
+
+#secundario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 15px;
+}
+
+#lateral {
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -750px;
+
+}
+
+/* Configurando rodapé */
+
+#container-rodape {
+	clear: both;
+	background: #294c71;
+	padding: 20px;
+}
+
+#rodape {
+	width: 750px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+/* Caixa */
+
+.caixa {
+	background: #f3f3f3 url('Imagens/fundo-caixa.png');
+	margin: 10px 0;
+	padding: 5px 0 5px 0;
+}
+
+/* Formatando os H2 */
+
+h2 {
+	font-size: 1em;
+	background: #294c71;
+	color: white;
+	padding: 5px;
+}
+
+.caixa-conteudo {
+	background: white;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+/* Formatando o conteúdo da barra lateral */
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#lateral a {
+	font-size: 0.9em;
+	padding: 3px;
+	display: block;
+	line-height: 30px;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral li:hover  {
+	color: #a1a1a1;
+	background: #f9f9f9 url('Imagens/marcador.png') no-repeat left center;
+	text-indent: 20px;
+}
+
+/* Formatando a div de News */
+
+label {
+	display: block;
+	cursor: pointer;
+}
+
+input {
+	font-size: 0.9em;
+	background: white;
+	padding: 5px;
+	width: 125px;
+}
+
+input.submit {
+	width: 80px;
+	color: white;
+	background-color: #b10333;
+	border: 2px solid #870529;
+	padding: 5px;
+	margin-top: 4px;
+}
+
+/* Formatando imagens */
+img {
+	border: 2px solid #dfdfdf;
+}
+
+/* Formatando cabeçalhos */
+
+ h3 {
+ 	text-transform: uppercase;
+ 	display:inline;
+ 	font-size: 0.8em;
+ 	padding: 3px;
+ 	background: #b10333;
+ 	color: white;	
+ }
+
+ .entrevista h3 {
+ 	background: #de003e;
+ 	color: black;
+ 	font-weight: bold;
+ }
+
+ /* Formatando lista de notícias */
+
+ #lista-noticias li {
+ 	padding: 2px;
+ 	border-bottom: 1px solid #ccc;
+ 	height: 65px;
+ }
+
+ #lista-noticias img {
+ 	float: left;
+ 	margin: 5px;
+ }
+
+#lista-noticias a {
+	text-decoration: none;
+}
+
+#lista-noticias h3 {
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+	background: none;
+}
+
+#lista-noticias p {
+	font-size: 0.7em;
+}
+
+#lista-noticias li:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
